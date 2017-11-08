@@ -23,7 +23,7 @@ data <- mutate(data,datetime = ymd_hms(as.POSIXct(paste(date,time))))
 
 ## Plot 3
 ## Put stratified time series lines and legend into plot3.png
-png("plot3.png",width=480,height=480,bg="transparent")
+png("plot3.png",width=480,height=480,bg="light gray")
 with(data,plot(datetime,submet1, type="n",xlab="",ylab="Energy sub metering") +
        lines(datetime,submet1,type="l",col="black") +
        lines(datetime,submet2,type="l",col="red") +
