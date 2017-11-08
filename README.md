@@ -1,3 +1,8 @@
+## Pre-Introduction
+
+Code files and png files are available.
+_Note_: Code assumes tidyverse packages (readr, dplyr, lubridate) have been installed. Please install these packages before running code.
+
 ## Introduction
 
 This assignment uses data from
