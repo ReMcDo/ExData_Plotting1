@@ -23,7 +23,7 @@ data <- mutate(data,datetime = ymd_hms(as.POSIXct(paste(date,time))))
 
 ## Plot 2
 ## Put time series lines into plot2.png
-png("plot2.png",width=480,height=480,bg="transparent")
+png("plot2.png",width=480,height=480,bg="light gray")
 with(data, plot(datetime,actpower, type="l",ylab="Global Active Power (kilowatts)",xlab=""))
 dev.off()
 
