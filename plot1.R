@@ -23,6 +23,6 @@ data <- mutate(data,datetime = ymd_hms(as.POSIXct(paste(date,time))))
 
 ## Plot 1
 ## Put histogram into plot1.png
-png("plot1.png",width=480, height = 480,bg="transparent")
+png("plot1.png",width=480, height = 480,bg="light gray")
 with(data,hist(actpower,col="red",xlab="Global Active Power (kilowatts)",main="Global Active Power"))
 dev.off()
